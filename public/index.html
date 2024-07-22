@@ -6,13 +6,13 @@
     <title>Chat-App</title>
 </head>
 <body>
-    <h1>hi</h1>
+
     <input type="text" placeholder="enter message" id="message">
     <button id="sendBtn">send</button>
     <div id="messages"></div>
     <script src="/socket.io/socket.io.js"></script>
     <script>
-        const socket =io('https://node-nexus-chat.vercel.app');
+        const socket =io();
         const sendBtn = document.getElementById('sendBtn')
         const messageInput = document.getElementById('message')
         const allMessages = document.getElementById('messages')
